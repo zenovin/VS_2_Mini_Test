@@ -6,10 +6,10 @@ The Request-Line begins with a method token, followed by the Request-URI and the
         Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
    
    b)
-GET http://192.168.1.1:8080 HTTP/1.1 CRLF ??? not sure about the CRLF
+GET http://192.168.1.1:8080 HTTP/1.1 CRLF ? not sure about the CRLF
 
    c)
-statelessness and cacheability (or uniform interface not sure)
+statelessness and cacheability (or uniform interface not sure ?)
 
 2. a) 
 Socket and ServerSocket
@@ -31,16 +31,19 @@ true ?
 false
 
 4. a)
-
-The WSDL File. It can be accessed through the link given in the assignment. ??
+The WSDL File. It can be accessed through the link given in the assignment. ?
 
    b)
 They can be found in here: http://vslab.inf.ethz.ch:8080/SunSPOTWebServices/SunSPOTWebservice?xsd=1
+
 <xs:element name="getSpot" type="tns:getSpot"/>
+
 <xs:element name="getSpotResponse" type="tns:getSpotResponse"/> ?
 
    c)
 One would change the expression after transport in the WSDL file to http://schemas.xmlsoap.org/soap/smtp.
+
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+
 The address would have to be an email-address since SMTP is a mail-protocol.
 
