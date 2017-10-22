@@ -6,4 +6,5 @@ The Request-Line begins with a method token, followed by the Request-URI and the
         Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
    
    b)
-http://192.168.1.1:8080
+GET http://192.168.1.1:8080 HTTP/1.1 CRLF
+                                     ??? not sure about the CRLF
