@@ -16,3 +16,16 @@ Socket and ServerSocket
 ServerSocket instantiation is what sets up the server to listen at the given port. The server is automatically set up at the computer on which it is run. Socket instantiation uses the accept() method of ServerSocket. This method waits until a client attempts to connect to the server, and it returns an instance of the Socket class. This Socket instance (skt) is now the "warp tunnel" through which one can communicate with the client. A connection to the server by the client is attempted through an instantiation of the Socket class. It attempts to contact the server through the same port where the server is listening. Once a connection is established Client and Server can communicate via input- and outputstreams.
 
    b)
+Blocking behaviour is when a method blocks the execution of the surrounding program while waiting for something. For example, an InputStream from a Socket socket will block, rather than returning EOF, until a TCP packet with the FIN flag set is received. It is only the read methods in InputStream that show blocking behaviour.
+
+3. a)
+false
+  
+   b)
+false
+
+   c)
+true ?
+
+   d)
+false
