@@ -15,7 +15,7 @@ GET http://192.168.1.1:8080/ HTTP/1.0\r\n\r\n
 
 
    c)
-statelessness and cacheability ?
+statelessness and cacheability
 
 2. 
 
@@ -37,7 +37,7 @@ false
 false
 
    c)
-true ?
+true
 
    d)
 false
@@ -46,7 +46,7 @@ false
 4. 
 
    a)
-The WSDL File. It can be accessed through the link given in the assignment. ?
+The WSDL File. It can be accessed through the link given in the assignment.
 
    b)
 They can be found in here: http://vslab.inf.ethz.ch:8080/SunSPOTWebServices/SunSPOTWebservice?xsd=1
