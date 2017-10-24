@@ -8,7 +8,11 @@ The Request-Line begins with a method token, followed by the Request-URI and the
         Request-Line   = Method SP Request-URI SP HTTP-Version CRLF
    
    b)
-GET http://192.168.1.1:8080 HTTP/1.1 CRLF ? not sure about the CRLF
+GET / HTTP/1.1\r\n
+Host: 192.168.1.1:8080\r\n\r\n
+
+GET http://192.168.1.1:8080/ HTTP/1.0\r\n\r\n
+
 
    c)
 statelessness and cacheability (or uniform interface not sure ?)
@@ -47,10 +51,24 @@ The WSDL File. It can be accessed through the link given in the assignment. ?
    b)
 They can be found in here: http://vslab.inf.ethz.ch:8080/SunSPOTWebServices/SunSPOTWebservice?xsd=1
 
+```
 <xs:element name="getSpot" type="tns:getSpot"/>
 
-<xs:element name="getSpotResponse" type="tns:getSpotResponse"/> ?
+<xs:complexType name="getSpot">
+  <xs:sequence>
+    <xs:element name="id" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
 
+
+<xs:element name="getSpotResponse" type="tns:getSpotResponse"/>
+
+<xs:complexType name="getSpotResponse">
+ <xs:sequence>
+    <xs:element name="return" type="tns:sunSpot" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+```
    c)
 One would change the expression after transport in the WSDL file to http://schemas.xmlsoap.org/soap/smtp.
 
@@ -62,4 +80,18 @@ The address would have to be an email-address since SMTP is a mail-protocol.
 5.
 
 a)
+10.0.2.15	The emulated device network/ethernet interface
+All emulators have their own router. 
+
+b)
+The emulated device loopback interface.
+To the emulated device itself.
+
+c)
+10.0.2.2
+
+d)
+Set up a network redirection on the virtual router. So one can then connect to a specified guest port on the router, while the router directs traffic to/from that port to the emulated device host port.
+
+
 
