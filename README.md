@@ -15,8 +15,7 @@ GET http://192.168.1.1:8080/ HTTP/1.0\r\n\r\n
 
 
    c)
-statelessness and cacheability (or uniform interface not sure ?)
-
+statelessness and cacheability ?
 
 2. 
 
@@ -78,20 +77,18 @@ The address would have to be an email-address since SMTP is a mail-protocol.
 
 
 5.
-
-a)
+   a)
 10.0.2.15	The emulated device network/ethernet interface
 All emulators have their own router. 
 
-b)
+   b)
 The emulated device loopback interface.
 To the emulated device itself.
 
-c)
+   c)
 10.0.2.2
 
-d)
-Set up a network redirection on the virtual router. So one can then connect to a specified guest port on the router, while the router directs traffic to/from that port to the emulated device host port.
-
-
+   d)
+To communicate with an emulator instance behind its virtual router, you need to set up network redirection on the virtual router. Clients can then connect to a specified guest port on the router, while the router directs traffic to/from that port to the emulated device host port.
+(from https://developer.android.com/studio/run/emulator-networking.html)
 
