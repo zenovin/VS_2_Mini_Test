@@ -77,7 +77,9 @@ One would change the expression after transport in the WSDL file to http://schem
 The address would have to be an email-address since SMTP is a mail-protocol.
 
 
-5. a)
+5. 
+
+   a)
 10.0.2.15	The emulated device network/ethernet interface
 All emulators have their own router. 
 
