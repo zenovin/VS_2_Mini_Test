@@ -11,8 +11,7 @@ The Request-Line begins with a method token, followed by the Request-URI and the
 GET http://192.168.1.1:8080 HTTP/1.1 CRLF ? not sure about the CRLF
 
    c)
-statelessness and cacheability (or uniform interface not sure ?)
-
+statelessness and cacheability ?
 
 2. 
 
@@ -61,5 +60,16 @@ The address would have to be an email-address since SMTP is a mail-protocol.
 
 5.
 
-a)
+   a)
+An emulated device gets the host's IP address as external IP, so for multiple emulated devices they get the same external IP address. ?
+
+   b)
+To itself.
+
+   c)
+10.0.2.2.
+
+   d)
+To communicate with an emulator instance behind its virtual router, you need to set up network redirection on the virtual router. Clients can then connect to a specified guest port on the router, while the router directs traffic to/from that port to the emulated device host port.
+(from https://developer.android.com/studio/run/emulator-networking.html)
 
